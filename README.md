@@ -1,19 +1,4 @@
-# doca-bootstrap-theme (DEPRECATED)
-
-The `doca` package for which this was written has been depreacted in favor of `@cloudflare/doca`,
-in the [json-schema-tools](https://github.com/cloudflare/json-schema-tools) repository.
-While `@cloudflare/doca` is conceptually the same, the back-end tools use a different
-format that retains compatibility with JSON Schema, so the theme requirements are different
-
-Also in that repository you will find a new `@cloudflare/doca-default-theme`, which is
-currently only a bare-bones debugging display for the back end tools.  We will be expanding
-it into a fully functional new theme, and feature requests will be handled there from now on.
-
-----
-
-The new `@cloudflare/doca` does not yet have a fully functioning theme, so this package
-is still the produciton-ready one.  But we will be implementing feature requests on the new
-code, and moving most open issues to the new repo whenever it makes sense.
+# doca-moo-de-event-contracts-theme
 
 Simple [Twitter Boostrap 3](http://getbootstrap.com/) based theme for [doca](https://github.com/cloudflare/doca).
 
@@ -25,10 +10,10 @@ Please file any issues at the [doca](https://github.com/cloudflare/doca/issues) 
 
 ```
 npm install -g doca
-doca init -t bootstrap
+doca init -t moo-de-event-contracts
 ```
 
-This creates a new API documentation with `doca-bootstrap-theme` as a dependency.
+This creates a new API documentation with `doca-moo-de-event-contracts-theme` as a dependency.
 
 # How to create your own theme
 
@@ -44,14 +29,14 @@ Doca expects to import **two React components** from your theme (otherwise it fa
 
 ### App component
 
-[App component](https://github.com/cloudflare/doca-bootstrap-theme/blob/master/components/app.js) can expect to receive two props:
+[App component](https://github.com/thibault-yellowstones/doca-moo-de-event-contracts-theme/blob/master/components/app.js) can expect to receive two props:
 
 - **`this.props.schemas`** : *Immutable.List* - an array of all imported schemas, the schema format can be found [here](https://github.com/cloudflare/json-schema-example-loader) - it's the ouput of [json-schema-example-loader](https://github.com/cloudflare/json-schema-example-loader). However, the whole data structure is additionally turned into immutable one by [Immutable.js](https://facebook.github.io/immutable-js) library and `Immutable.fromJS()` function. It deeply converts all arrays into [Immutable.List](https://facebook.github.io/immutable-js/docs/#/List) and all objects into [Immutable.Map](https://facebook.github.io/immutable-js/docs/#/Map). Thus, you have to use slightly different methods for iteration or prop access.
 - **`this.props.config`** : *object* - a plain object exported by users from `config.js`, it should always have the key `title`.
 
 ### Head component
 
-[Head component](https://github.com/cloudflare/doca-bootstrap-theme/blob/master/components/head.js) can expect to receive two props:
+[Head component](https://github.com/thibault-yellowstones/doca-moo-de-event-contracts-theme/blob/master/components/head.js) can expect to receive two props:
 
 - **`this.props.title`** : *string* - the title specified in `config.js`
 - **`this.props.cssBundle`** : *string* - you should put this code into your Head component:

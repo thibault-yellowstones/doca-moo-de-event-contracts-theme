@@ -1,13 +1,13 @@
 {
-  "name": "doca-bootstrap-theme",
+  "name": "doca-moo-de-event-contracts-theme",
   "version": "1.0.0",
-  "description": "Doca theme using Twitter Bootstrap",
+  "description": "Doca theme used by MOO Data Engineering team fort their Event Contract documentation",
   "main": "index.js",
-  "author": "Vojtech Miksu <vojtech@miksu.cz>",
+  "author": "Thibault Drevon <thibault@moo.com>",
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cloudflare/doca-bootstrap-theme"
+    "url": "https://github.com/thibault-yellowstones/doca-moo-de-event-contracts-theme"
   },
   "scripts": {
     "build": "npm run clean && mkdir -p build && babel components --out-dir build",
